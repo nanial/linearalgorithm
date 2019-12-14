@@ -1,30 +1,85 @@
 package by.training.condition.currencyinword.model;
 
+import by.training.condition.currencyinword.bean.Currency;
+
 public class ConvertImpl implements Convert{
+
+    private Currency currency;
+
+    public ConvertImpl(Currency currency) {
+        this.currency = currency;
+    }
 
     @Override
     public String getUnitInWord(int unit) {
+
         String word;
         switch (unit){
-            case 1: word = "один";
+            case 1:
+                if (currency.getTen() == 1 ){
+                    word = "одиннадцать рублей";
+                }
+                else {
+                    word = "один рубль";
+                }
             break;
-            case 2: word = "два";
+            case 2:
+                if (currency.getTen() == 1 ){
+                    word = "двенадцать рублей";
+                } else {
+                    word = "два рубля";
+                }
             break;
-            case 3: word = "три";
+            case 3:
+                if (currency.getTen() == 1 ){
+                word = "тринадцать рублей";
+                } else {
+                    word = "три рубля";
+                }
             break;
-            case 4: word = "четыре";
+            case 4:
+                if (currency.getTen() == 1 ){
+                    word = "четырнадцать рублей";
+                } else {
+                    word = "четыре рубля";
+                }
             break;
-            case 5: word = "пять";
+            case 5:
+                if (currency.getTen() == 1 ){
+                    word = "пятнадцать рублей";
+                } else {
+                    word = "пять рублей";
+                }
             break;
-            case 6: word = "шесть";
+            case 6:
+                if (currency.getTen() == 1 ){
+                    word = "шестнадцать рублей";
+                } else {
+                    word = "шесть рублей";
+                }
             break;
-            case 7: word = "семь";
+            case 7:
+                if (currency.getTen() == 1 ){
+                    word = "семнадцать рублей";
+                } else {
+                    word = "семь рублей";
+                }
             break;
-            case 8: word = "восемь";
+            case 8:
+                if (currency.getTen() == 1 ){
+                    word = "восемнадцать рублей";
+                } else {
+                    word = "восемь рублей";
+                }
             break;
-            case 9: word = "девять";
+            case 9:
+                if (currency.getTen() == 1 ){
+                    word = "девятнадцать рублей";
+                } else {
+                    word = "девять рублей";
+                }
             break;
-            case 0: word = "";
+            case 0: word = "рублей";
             break;
 
             default:
@@ -37,8 +92,13 @@ public class ConvertImpl implements Convert{
     public String getTenInWord(int ten) {
         String word;
         switch (ten){
-            case 1: word = "десять";
-                break;
+            case 1:
+                if(currency.getUnit() == 0){
+                    word = "десять";
+                }else {
+                word = "";
+                }
+                    break;
             case 2: word = "двадцать";
                 break;
             case 3: word = "тридцать";

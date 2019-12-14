@@ -8,13 +8,13 @@ public class Runner {
 
     public static void main(String[] args) {
 
-        Convert word = new ConvertImpl();
-        Currency currency = new Currency(1236);
 
+        Currency currency = new Currency(1211);
+        Convert word = new ConvertImpl(currency);
         System.out.println(word.getThousandInWord(currency.getThousand()) + " " +
                 word.getHundredInWord(currency.getHundred()) + " " +
                 word.getTenInWord(currency.getTen()) + " " +
-                word.getUnitInWord(currency.getUnit()) + " рублей");
+                word.getUnitInWord(currency.getUnit()));
 
     }
 }

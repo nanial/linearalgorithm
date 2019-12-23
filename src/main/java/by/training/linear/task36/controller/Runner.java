@@ -2,7 +2,7 @@ package by.training.linear.task36.controller;
 
 //Найти частное произведений четных и нечетных цифр четырехзначного числа.
 
-import by.training.linear.task36.model.DividerModel;
+import by.training.linear.task36.service.DividerModel;
 
 public class Runner {
 

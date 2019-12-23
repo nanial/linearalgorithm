@@ -2,8 +2,8 @@ package by.training.decomposition.task5.controller;
 
 //Написать метод(методы) для нахождения суммы большего и меньшего из трех чисел.
 
-import by.training.decomposition.task5.model.SumLessAndMax;
-import by.training.decomposition.task5.model.SumLessAndMaxImpl;
+import by.training.decomposition.task5.service.SumLessAndMax;
+import by.training.decomposition.task5.service.SumLessAndMaxImpl;
 
 public class Runner {
     public static void main(String[] args) {

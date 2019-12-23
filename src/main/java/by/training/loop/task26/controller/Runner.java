@@ -3,7 +3,7 @@ package by.training.loop.task26.controller;
 //Вывести на экран соответствий между символами и их численными
 // обозначениями в памяти компьютера (Таблицу ASCII).
 
-import by.training.loop.task26.model.TableASCII;
+import by.training.loop.task26.service.TableASCII;
 
 public class Runner {
 

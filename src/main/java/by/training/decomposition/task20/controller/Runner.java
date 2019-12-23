@@ -4,8 +4,8 @@ package by.training.decomposition.task20.controller;
 // сумму его цифр и т.д. Сколько таких действий надо произвести,
 // чтобы получился нуль? Для решения задачи использовать декомпозицию.
 
-import by.training.decomposition.task20.model.Subtract;
-import by.training.decomposition.task20.model.SubtractImpl;
+import by.training.decomposition.task20.service.Subtract;
+import by.training.decomposition.task20.service.SubtractImpl;
 
 public class Runner {
     public static void main(String[] args) {
